@@ -1,4 +1,4 @@
-import Introduction from "./Feb 8/Introduction";
+import Introduction from "./Component/Introduction";
 //import { DisplayDetails } from "./Feb 8/Introduction";
 
 export default function App(){
