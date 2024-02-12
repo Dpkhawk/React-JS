@@ -13,6 +13,8 @@ import Inh from "./claaComponent/Inheritance.js";
 import ButtonComponent from "./claaComponent/ButtonComponent.js";
 import Condition from "./Condition/Condition.js";
 import Comp from "./Condition/new.js";
+import Button from "./Component/Button.js";
+import Colour from "./Component/Colour.js";
 export default function App(){
     return (<>
     {/* <Introduction/> */}
@@ -32,6 +34,6 @@ export default function App(){
     {/* <Inh value={3}/> */}
     {/* <ButtonComponent/> */}
     {/* <Condition values={true}/> */}
-    <Comp/>
+    <Colour/>
     </>)
 }
