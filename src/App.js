@@ -15,7 +15,41 @@ import Condition from "./Condition/Condition.js";
 import Comp from "./Condition/new.js";
 import Button from "./Component/Button.js";
 import Colour from "./Component/Colour.js";
+import Practise from "./List/Practise.js";
+// import './List/List.css'
+import ArrayList from './List/ArrayList.js'
+import  ArrayofObjects  from "./List/ArrayList.js";
+import ButtonEvent from "./Events/ButtonEvent.js";
+import EventProp from "./Events/EventPropagation.js";
+import Practises from "./claaComponent/Practise.js";
+import UseState from "./HooksState/UseState.js";
 export default function App(){
+     const people = [
+        'Creola Katherine Johnson: mathematician',
+        'Mario José Molina-Pasquel Henríquez: chemist',
+        'Mohammad Abdus Salam: physicist',
+        'Percy Lavon Julian: chemist',
+        'Subrahmanyan Chandrasekhar: astrophysicist'
+      ];
+      const peoples = [{
+        id: 0,
+        name: 'Creola Katherine Johnson',
+        profession: 'mathematician',
+      }, {
+        id: 1,
+        name: 'Mario José Molina-Pasquel Henríquez',
+        profession: 'chemist',
+      }, {
+        id: 2,
+        name: 'Mohammad Abdus Salam',
+        profession: 'physicist',
+      }, {
+        name: 'Percy Lavon Julian',
+        profession: 'chemist',  
+      }, {
+        name: 'Subrahmanyan Chandrasekhar',
+        profession: 'astrophysicist',
+      }];
     return (<>
     {/* <Introduction/> */}
     {/* <DisplayDetails obj={{name:"deepak",
@@ -34,6 +68,12 @@ export default function App(){
     {/* <Inh value={3}/> */}
     {/* <ButtonComponent/> */}
     {/* <Condition values={true}/> */}
-    <Colour/>
+    {/* <Colour/> */}
+    {/* <ArrayList array={people}/> */}
+    {/* <ArrayofObjects obj={peoples}/> */}
+    {/* <Practise/> */}
+    {/* <ButtonEvent/> */}
+    {/* <Practises/> */}
+    <UseState/>
     </>)
 }
