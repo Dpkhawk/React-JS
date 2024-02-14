@@ -23,6 +23,12 @@ import ButtonEvent from "./Events/ButtonEvent.js";
 import EventProp from "./Events/EventPropagation.js";
 import Practises from "./claaComponent/Practise.js";
 import UseState from "./HooksState/UseState.js";
+import InputTag from "./Forms/InputTag.js";
+import TextArea from "./Forms/TextArea.js";
+import { SelectTag } from "./Forms/Select.js";
+import SnapShot from "./HooksState/StateSnapshoot.js";
+import Counter from "./HooksState/StateUpdate1.js";
+import UpdateObjects from "./HooksState/ObjectsChange.js";
 export default function App(){
      const people = [
         'Creola Katherine Johnson: mathematician',
@@ -74,6 +80,12 @@ export default function App(){
     {/* <Practise/> */}
     {/* <ButtonEvent/> */}
     {/* <Practises/> */}
-    <UseState/>
+    {/* <UseState/> */}
+    {/* <InputTag/> */}
+    {/* <TextArea/> */}
+    {/* <SelectTag/> */}
+    {/* <SnapShot/> */}
+    {/* <Counter/> */}
+    <UpdateObjects/>
     </>)
 }
