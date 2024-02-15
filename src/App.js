@@ -29,6 +29,9 @@ import { SelectTag } from "./Forms/Select.js";
 import SnapShot from "./HooksState/StateSnapshoot.js";
 import Counter from "./HooksState/StateUpdate1.js";
 import UpdateObjects from "./HooksState/ObjectsChange.js";
+import ArrayMutate from "./HooksState/Array.js";
+import Activity from "./HooksState/Activity.js";
+import UseReducer from "./HooksState/UseReducer.js";
 export default function App(){
      const people = [
         'Creola Katherine Johnson: mathematician',
@@ -86,6 +89,9 @@ export default function App(){
     {/* <SelectTag/> */}
     {/* <SnapShot/> */}
     {/* <Counter/> */}
-    <UpdateObjects/>
+    {/* <UpdateObjects/> */}
+    {/* <ArrayMutate/> */}
+    {/* <Activity/> */}
+    <UseReducer/>
     </>)
 }
