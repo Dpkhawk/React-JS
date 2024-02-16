@@ -10,30 +10,44 @@ const initialTasks = [
 
 
 export default function UseReducer(){
+    
     const[state,dispatch]=useReducer(reducerFunc,initialTasks)
     const[value,setValue]=useState('')
     function handleChange(){
+        try{
         dispatch({
             type:'adding',
             id:nextId,
             text:value
-        })
+        })}
+        catch{
+            return <h1>error</h1>
+        }
+    }
+    function deleteChange(id){
+      dispatch({
+       type:'delete',
+       newId:id
+      })
     }
    return(<ul> {
         state.map(st=>{
-            return(<li>{st.text}<input onChange={(e)=>setValue(e.target.value)} type="text"/><button onClick={handleChange}>add</button></li>)}
+            return(<li>{st.text}<input onChange={(e)=>setValue(e.target.value)} type="text"/><button onClick={handleChange}>add</button><button onClick={()=>deleteChange(st.id)}> Delete</button></li>)}
         )
-    }</ul>)
-}
+    }</ul>)}
+    
+
 
 function reducerFunc(state,action){
    switch (action.type) {
     case 'adding':
         return[...state,{id:action.id,done:false,text:action.text}]
         break;
+    case 'delete':
+        return(state.filter(element=>element.id!==action.newId))
    
     default:
-        <h1>error</h1>
+        throw new Error('invalid synt')
         break;
    }
 }

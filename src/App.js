@@ -32,6 +32,11 @@ import UpdateObjects from "./HooksState/ObjectsChange.js";
 import ArrayMutate from "./HooksState/Array.js";
 import Activity from "./HooksState/Activity.js";
 import UseReducer from "./HooksState/UseReducer.js";
+import Parent from "./UseContext/Parent.js";
+import InputTagUseRef from "./UseRef/InputTagUSeref.js";
+import VideoTag from "./UseRef/VideoPlaying.js";
+import Fetching from "./UseEffect/Fetching.js";
+import Dependency from "./UseEffect/Dependency.js";
 export default function App(){
      const people = [
         'Creola Katherine Johnson: mathematician',
@@ -92,6 +97,11 @@ export default function App(){
     {/* <UpdateObjects/> */}
     {/* <ArrayMutate/> */}
     {/* <Activity/> */}
-    <UseReducer/>
+    {/* <UseReducer/> */}
+    {/* <Parent/> */}
+    {/* <InputTagUseRef/>
+    <VideoTag/> */}
+    {/*   c<Fetching/> */}
+    <Dependency/>
     </>)
 }
