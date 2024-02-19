@@ -37,6 +37,12 @@ import InputTagUseRef from "./UseRef/InputTagUSeref.js";
 import VideoTag from "./UseRef/VideoPlaying.js";
 import Fetching from "./UseEffect/Fetching.js";
 import Dependency from "./UseEffect/Dependency.js";
+import Hooks from "./CustomHooks/Hooks.js";
+import UseCallBack from "./UseCallBack/UseCallBack.js";
+import UseMemo from "./UseMemo/UseMemo.js";
+import Memo from "./UseMemo/ValueReturnInMemo.js";
+import LazyLoading from "./CodeSplitting/LazyLoading.js";
+import MemoInsideCallBack from "./UseMemo/MemoWithCallback.js";
 export default function App(){
      const people = [
         'Creola Katherine Johnson: mathematician',
@@ -102,6 +108,12 @@ export default function App(){
     {/* <InputTagUseRef/>
     <VideoTag/> */}
     {/*   c<Fetching/> */}
-    <Dependency/>
+    {/* <Dependency/> */}
+    {/* <Hooks/> */}
+    {/* <UseCallBack/> */}
+    {/* <UseMemo/> */}
+    {/* <Memo/> */}
+    {/* <LazyLoading/> */}
+    <MemoInsideCallBack/>
     </>)
 }
