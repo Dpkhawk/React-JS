@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Parent(){
+export default function Parents(){
     const[state,setState]=useState(1)
     return(<>
     <Child1 state={state} setState={setState}/>
@@ -11,13 +11,19 @@ export default function Parent(){
 function Child1({state,setState}){
       return(<>
       <h1>{state}</h1>
-      <button onClick={setState}>Click</button>
+      <button onClick={()=>setState(state+1)}>Click</button>
       </>)
 }
 
-function Child1({state,setState}){
+function Child2({state,setState}){
     return(<>
     <h1>{state}</h1>
-    <button onClick={setState}>Click</button>
+    <button onClick={()=>setState(state+1)}>Click</button>
     </>)
+}
+
+export function Push(){
+    return(
+        <label>Enter the name: <input type="number"/></label>
+    )
 }

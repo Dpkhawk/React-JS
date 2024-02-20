@@ -43,6 +43,9 @@ import UseMemo from "./UseMemo/UseMemo.js";
 import Memo from "./UseMemo/ValueReturnInMemo.js";
 import LazyLoading from "./CodeSplitting/LazyLoading.js";
 import MemoInsideCallBack from "./UseMemo/MemoWithCallback.js";
+import Parents from "./LiftingStateUp/Parent.js";
+import FunctionCalling from "./UseMemo/FunctionCalling.js";
+import { Push } from "./LiftingStateUp/Parent.js";
 export default function App(){
      const people = [
         'Creola Katherine Johnson: mathematician',
@@ -114,6 +117,9 @@ export default function App(){
     {/* <UseMemo/> */}
     {/* <Memo/> */}
     {/* <LazyLoading/> */}
-    <MemoInsideCallBack/>
+    {/* <MemoInsideCallBack/> */}
+    {/* <Parents/> */}
+    {/* <FunctionCalling/> */}
+    <Push/>
     </>)
 }
